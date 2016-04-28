@@ -5,10 +5,7 @@
  * @returns {Array}
  */
 exports.forceArray = function(data) {
-    if (Array.isArray(data)) {
-        return data;
-    }
-    return [data];
+    return Array.isArray(data) ? data : [data];
 };
 
 /**
